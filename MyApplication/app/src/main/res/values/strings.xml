@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CISC325 Meet Up</string>
+    <string name="log_in_button">Log In</string>
+    <string name="header">Meet Up! An app for social gatherings</string>
+</resources>
