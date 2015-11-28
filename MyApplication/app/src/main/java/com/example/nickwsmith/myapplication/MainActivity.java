@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,14 +15,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final TextView firstTextView = (TextView) findViewById(R.id.textView);
+
         Button firstButton = (Button) findViewById(R.id.logInButton);
+        final EditText input = (EditText) findViewById(R.id.netIDInput);
+
 
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                firstTextView.setText("You Clicked");
+            String id = String.valueOf(input.getText());
+            String welcomeMessage = "Welcome to Meet Up" + id;
+
+
             }
         });
     }

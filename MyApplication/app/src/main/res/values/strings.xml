@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">CISC325 Meet Up</string>
     <string name="log_in_button">Log In</string>
-    <string name="header">Meet Up! An app for social gatherings</string>
+    <string name="header">Meet Up! An app for social gatherings.</string>
+    <string name="queensID">Please Enter Your Queens net ID</string>
+    <string name="hint_for_edit_text_net_ID">Your NetID</string>
 </resources>
