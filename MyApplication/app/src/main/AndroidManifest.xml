@@ -21,6 +21,10 @@
         <activity android:name=".IdleScreen"
             android:label="Idle Screen"
             android:theme="@style/AppTheme" />
+
+        <activity android:name=".searchScreen"
+            android:label="searchScreen"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

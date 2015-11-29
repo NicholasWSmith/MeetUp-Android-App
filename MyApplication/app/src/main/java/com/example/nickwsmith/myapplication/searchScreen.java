@@ -1,34 +1,17 @@
 package com.example.nickwsmith.myapplication;
 
-import android.app.Activity;
 import android.app.DialogFragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
 /**
- * Created by Nicholas Smith on 2015-11-28.
+ * Created by Nicholas Smith on 2015-11-29.
  */
-public class IdleScreen extends AppCompatActivity {
+public class searchScreen extends AppCompatActivity {
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-
-        super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.idle_layout_page);
-
-        Intent activityThatCalled = getIntent();
-
-        String netID = activityThatCalled.getExtras().getString("usersNetID");
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
@@ -60,16 +43,9 @@ public class IdleScreen extends AppCompatActivity {
     }
 
 
-    public void createEvent(View view) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
 
-    }
-
-    public void searchEvents(View view) {
-        //Creating the intent - what we want to do
-        Intent getSearchScreen = new Intent(this, searchScreen.class);
-
-
-
-        startActivity(getSearchScreen);
+        super.onCreate(savedInstanceState);
     }
 }
