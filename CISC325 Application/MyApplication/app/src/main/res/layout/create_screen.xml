@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+        <!-- Text field for event name. 1st input field-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_name"
+            android:hint="@string/hint_event_name"
+            android:layout_gravity="center_horizontal" />
+
+        <!--Date Picker button for picking dates (not the fruit). 2nd input field-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_event_date"
+            android:id="@+id/event_date"
+            android:hint="@string/hint_event_location"
+            android:onClick="showDatePickerDialog"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            />
+
+        <!-- Text Field for Event Location. 3rd input field-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_location"
+            android:hint="@string/hint_event_location"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"/>
+
+        <!--Number field for max number of people for an event. Only takes integers. 4th input field.-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="5"
+            android:id="@+id/event_max_people"
+            android:hint="@string/hint_max_people"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"/>
+
+        <!--Text field for additional details about the input. 5th input field-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_additional_details"
+            android:hint="@string/hint_event_details"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"/>
+        <!--The create button. When hit, it will go to the confirmation page.-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_button"
+            android:onClick="buttonCreateConfirmation"
+            android:id="@+id/create_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"/>
+    </LinearLayout>
+</ScrollView>

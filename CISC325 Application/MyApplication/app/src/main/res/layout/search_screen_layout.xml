@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick an Event!"
+        android:textSize="40sp"
+        android:id="@+id/textView3"
+        android:gravity="center|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:orientation="horizontal"
+        android:background="#ffdae6ff"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/first_event"
+            android:text="@string/event_number_1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="firstEventClick"/>
+
+        <TextView
+            android:id="@+id/first_event_people_remaining"
+            android:text="@string/event_number_1_spots_avail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:id="@+id/second_event"
+            android:text="@string/event_number_2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="secondEventClick"/>
+
+        <TextView
+            android:id="@+id/second_event_people_remaining"
+            android:text="@string/event_number_2_spots_avail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:id="@+id/third_event"
+            android:text="@string/event_number_3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="thirdEventClick"/>
+
+        <TextView
+            android:id="@+id/third_event_people_remaining"
+            android:text="@string/event_number_3_spots_avail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:id="@+id/fourth_event"
+            android:text="Music Practice - Dec, 14th"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="fourthEventClick"/>
+
+
+        <TextView
+            android:id="@+id/fourth_event_people_remaining"
+            android:text="Spots Avail - 5/10"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left|top" />
+
+
+
+    </GridLayout>
+
+
+
+</RelativeLayout>
+
+
+

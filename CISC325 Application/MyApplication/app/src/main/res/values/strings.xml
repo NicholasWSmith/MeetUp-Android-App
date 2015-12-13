@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CISC325 Meet Up</string>
+    <string name="log_in_button">Log In</string>
+    <string name="header">Meet Up! An app for social gatherings.</string>
+    <string name="queensID">Please Enter Your Queens net ID</string>
+    <string name="hint_for_edit_text_net_ID">Your NetID</string>
+    <string name="action_settings">My Profile</string>
+    <string name="options_exit_text">Exit</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="passing_data">Enter</string>
+    <string name="calling_activity_message">The your netID is</string>
+    <string name="action_help">Help Menu</string>
+    <string name="action_legal">Legal</string>
+    <string name="search_for_events">Search Events</string>
+    <string name="create_new_event">Create Event</string>
+    <string name="event_number_1">Soccer Event - Dec 6th</string>
+    <string name="event_number_1_spots_avail">Spots Avail - 6/11</string>
+    <string name="event_number_2">Musical Session - Dec 6th</string>
+    <string name="event_number_2_spots_avail">Spots Avail- 3/5</string>
+    <string name="event_number_3">Volleyball Event - Dec, 6th</string>
+    <string name="event_number_3_spots_avail">Spots Avail - 10/12</string>
+    <string name ="headerForSearch"> Searching for an event...</string>
+
+    <!--Hints for Create Screen Text Inputs-->
+    <string name="hint_event_name">Event Name:  Eg. Football at Nixon</string>
+    <string name="hint_event_location">Event Location:  Eg. Nixon Field</string>
+    <string name="hint_max_people">Max. people at event: Eg. 200</string>
+    <string name="hint_event_details">Additional Details:  Eg. Bring water!</string>
+    <!--Button names on Create Screen-->
+    <string name="choose_event_date">Choose Event Date</string>
+    <string name="create_button">Create Event</string>
+    <!--Hardcoded strings for text display purposes-->
+    <string name="congrats_create">Congrats your amazing event has been successfully added!! Hope you and your guests have a blast!</string>
+    <!--Button in create confirmaiton page-->
+    <string name="button_main_page"> Back to Main Page</string>
+</resources>
